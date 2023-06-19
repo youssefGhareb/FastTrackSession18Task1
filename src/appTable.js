@@ -197,7 +197,7 @@ export default function EnhancedTable(props) {
 
     React.useEffect(()=>{
         setFilteredRows(getFilteredRows());
-    }, [searchValue, userNameValue, statusValue, statusInputValue])
+    }, [searchValue, userNameValue, statusValue, statusInputValue, rows, props.rows])
 
 
     const handleSelectAllClick = (event) => {
